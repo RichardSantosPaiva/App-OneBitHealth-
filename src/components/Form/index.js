@@ -20,7 +20,7 @@ function validationImc() {
       imcCalculator()
       setHeight(null)
       setWeight(null)
-      setMessageImc("Seu imc é igual"+imc)
+      setMessageImc("Seu imc é igual")
       setTextButton("Calcular Novamente")
       return
     }
@@ -40,7 +40,7 @@ function validationImc() {
             KeyboardType="numeric"
 
           />
-          <Text>Peso</Text> 
+          <Text style={styles.formLabel}>Peso</Text> 
           <TextInput
             style={styles.input}
             onChangeText={setWeight}
