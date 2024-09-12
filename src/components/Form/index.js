@@ -52,8 +52,9 @@ function validationImc() {
 
 
   return (
-    <Pressable onPress={Keyboard.dismiss} style={styles.formContext}>
-         <View style={styles.form}>
+    <View onPress={Keyboard.dismiss} style={styles.formContext}>
+        {imc == null ?
+         <Pressable style={styles.form}>
           <Text style={styles.formLabel}>Altura</Text>
           <Text style={styles.errorMensage}>{errorMensage}</Text>
           <TextInput
@@ -61,8 +62,7 @@ function validationImc() {
             onChangeText={setHeight}
             value={height}
             placeholder="Ex: 1.75"
-            KeyboardType="numeric"
-
+            keyboardType="numeric"
           />
           <Text style={styles.formLabel}>Peso</Text> 
           <Text style={styles.errorMensage}>{errorMensage}</Text>
@@ -71,7 +71,7 @@ function validationImc() {
             onChangeText={setWeight}
             value={weight}
             placeholder="Ex: 76.365"
-            KeyboardType="numeric"
+            keyboardType="numeric"
           />
           <TouchableOpacity
            style={styles.buttonCalculator}
@@ -80,8 +80,18 @@ function validationImc() {
           }}>
             <Text style={styles.textButtonCalculator}>{textButton}</Text>
           </TouchableOpacity>
+         </Pressable>
+         :
+         <View style={styles.exhibitionResultImc}>
+           <ResultImc messageResultImc={messageImc} resultImc={imc}/>
+           <TouchableOpacity
+            style={styles.buttonCalculator}
+            onPress={() => {  validationImc()}}
+            >
+            <Text style={styles.textButtonCalculator}>{textButton}</Text>
+           </TouchableOpacity>
          </View>
-         <ResultImc messageResultImc={messageImc} resultImc={imc}/>
-    </Pressable>
+        }
+    </View>
   );
 }
