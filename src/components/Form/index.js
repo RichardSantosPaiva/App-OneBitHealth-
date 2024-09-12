@@ -41,13 +41,13 @@ function validationImc() {
       setMessageImc("Seu imc é igual")
       setTextButton("Calcular Novamente")
       setErrorMessage(null)
-
-      return
     }
+    else{
     verificationImc()
     setImc(null)
     setTextButton("Calcular")
     setMessageImc('preencha o peso e altura')
+    }
 }
 
 
