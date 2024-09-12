@@ -12,6 +12,8 @@ Bem-vindo ao App-OneBitHealth! Este é um projeto desenvolvido com Expo e React 
 
 Para visualizar e testar o aplicativo, é necessário ter o aplicativo [Expo Go](https://expo.dev/client) instalado em seu dispositivo móvel.
 
+##É necessário
+
 ## Como Começar
 
 1. **Clone o Repositório:**
@@ -27,8 +29,6 @@ Para visualizar e testar o aplicativo, é necessário ter o aplicativo [Expo Go]
     ```npm install
 5.  **Inicie o Projeto:**
     ```expo start
-
-##É necessário
 
 
 
