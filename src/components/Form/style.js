@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   formContext: {
+  
     width: "100%",
     height: "100%",
     bottom: 0,
@@ -9,13 +10,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderTopLeftRadius:30,
     borderTopRightRadius:30,
-    marginTop: 30,
+    paddingTop:15,
     padding: 10,
   },
   form:{
     width:"100%",
     height:"auto",
-    padding:10,
   },
   formLabel:{
     color:"#00000",
@@ -44,6 +44,29 @@ const styles = StyleSheet.create({
   textButtonCalculator:{
     fontSize:20,
     color:"#ffffff"
+  },
+  errorMensage:{
+    color:"red",
+    fontWeight:"bold",
+    paddingLeft:20,   
+  },
+  exhibitionResultImc:{
+    width:"100%",
+    height:"50%",
+  },
+  listImcs:{
+    marginTop:20, 
+  },
+  resultImcItem:{
+    fontSize:28,
+    color:"red",
+    height:50,
+    width:"100%",
+    paddingRight:20,
+  },
+  textResultItemList:{
+    fontSize:14,
+    color: "red",
   }
 });
 
