@@ -20,15 +20,16 @@ Para visualizar e testar o aplicativo, é necessário ter o aplicativo [Expo Go]
 
    ```bash
    git clone https://github.com/RichardSantosPaiva/App-OneBitHealth.git
-2. **Instale as Dependências:**
 
-   ```npm install
+2. **Instale as Dependências:**
+   ```bash
+   npm install
 3.  **Navegue para o Diretório do Projeto:**
-    ```cd App-OneBitHealth
-4.  **Instale as Dependências:**
-    ```npm install
+    ```bash
+    cd App-OneBitHealth
 5.  **Inicie o Projeto:**
-    ```expo start
+    ```
+    expo start
 
 
 
